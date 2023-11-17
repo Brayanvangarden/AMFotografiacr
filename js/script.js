@@ -196,19 +196,20 @@ class miNav2 extends HTMLElement {
 customElements.define("mi-footer", miNav2);
 
 /*JQUERY*/
+document.addEventListener('DOMContentLoaded', function () {
+  var fechaNacimientoInput = document.getElementById('fechaNacimiento');
+  var edadResultadoInput = document.getElementById('edadResultado');
 
-jQuery(document).ready(function ($) {
-  $("#calcularEdad").click(function () {
-    // Obtener la fecha de nacimiento
-    var fechaNacimiento = $("#fechaNacimiento").val();
+  fechaNacimientoInput.addEventListener('change', function () {
+    var fechaNacimiento = new Date(this.value);
+    var hoy = new Date();
+    var edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
 
-    // Calcular la edad
-    var fechaNacimientoDate = new Date(fechaNacimiento);
-    var fechaActual = new Date();
-    var edad = fechaActual.getFullYear() - fechaNacimientoDate.getFullYear();
+    if (hoy.getMonth() < fechaNacimiento.getMonth() || (hoy.getMonth() === fechaNacimiento.getMonth() && hoy.getDate() < fechaNacimiento.getDate())) {
+      edad--;
+    }
 
-    // Mostrar la edad en el cuadro de texto
-    $("#edadResultado").val(edad);
+    edadResultadoInput.value = edad;
   });
 });
 
