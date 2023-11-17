@@ -46,10 +46,25 @@ footer{
 
     font-family:'Crimson';
     font-size: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    background-color: #ebebeb; 
+    transition: background-color 0.5s ease; 
 
 }
 
+
+footer a {
+  color: #345270; 
+  transition: color 0.5s ease; 
+}
+
+footer a:hover {
+  color: #007bff; 
+}
+
+footer:hover {
+  background-color: #b8b8b8; 
+}
 /*adaptable responsivo*/
 @media screen and (max-width: 767px){
 
