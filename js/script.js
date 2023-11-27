@@ -280,7 +280,7 @@ function mostrarInformacion() {
 class miNav3 extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <a href="https://api.whatsapp.com/send?phone=50660106969&text=Bienvenido%20a%20AM%20FOTOGRAF%C3%8DA" class="btn-wsp"
+    <a href="https://api.whatsapp.com/send?phone=50650684449279&text=Bienvenido%20a%20AM%20FOTOGRAF%C3%8DA" class="btn-wsp"
 target="_blank">
 <i class="fa fa-whatsapp icono"></i>
 </a>
