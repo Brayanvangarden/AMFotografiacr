@@ -78,7 +78,6 @@ color: white;
 .modo-oscuro .toggle-btn .icon {
   color: #ffffff; 
 }
-
 /*FOOTER*/
 
 
@@ -107,6 +106,8 @@ footer a:hover {
 footer:hover {
   background-color: #b8b8b8; 
 }
+
+
 /*adaptable responsivo*/
 @media screen and (max-width: 767px){
 
@@ -556,6 +557,7 @@ video {
 }
 
 /*caro*/
+
 /*sonido*/
 
 
@@ -685,3 +687,10 @@ video {
     width: 50%;
     transition: width 0.1s linear;
   }
+
+
+
+/* Estilo en modo claro */
+
+
+/* Estilo en modo oscuro */
