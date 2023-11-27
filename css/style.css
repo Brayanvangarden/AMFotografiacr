@@ -57,11 +57,7 @@
   transition: background-color 0.5s, color 0.5s;
 }
 
-.modo-oscuro .nav-linkactive{
-  background-color: #333; 
-color: white;
 
-} 
 /*FOOTER*/
 
 
