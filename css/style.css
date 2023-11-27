@@ -24,28 +24,15 @@
     margin-right: 2rem ;
     margin-left: 2rem;
     transition: background-color 0.5s, color 0.5s;
-
+    color: black; /* Color del texto en modo claro */
   
 
 }
 
-.modo-oscuro .navbar{
-  background-color: #333; 
-color: white;
-
+.modo-oscuro .navbar {
+  background-color: #333; /* Cambia este color según tu tema oscuro */
+  color: #ffffff; /* Cambia este color según tu tema oscuro */
 }
-
-.modo-oscuro .nav-link{
-  background-color: #333; 
-color: white;
-
-}
-
-.modo-oscuro .nav-linkactive{
-  background-color: #333; 
-color: white;
-
-} 
 
 .navbar-collapse{
 
@@ -63,19 +50,11 @@ color: white;
 
 .toggle-btn {
 
-  font-size: 1rem;
+  font-size: 1rem; /* Ajusta el tamaño de la fuente según sea necesario */
   cursor: pointer;
   border: none;
-  background: none;
-  transition: color 0.5s;
-}
-
-.toggle-btn .icon {
-  color: black; 
-}
-
-.modo-oscuro .toggle-btn .icon {
-  color: #ffffff; 
+  border-radius: 4px;
+  transition: background-color 0.5s, color 0.5s;
 }
 /*FOOTER*/
 
